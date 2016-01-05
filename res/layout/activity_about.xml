@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_01"
+    android:orientation="vertical" >
+
+<!--顶部菜单-->
+<LinearLayout
+    	 android:id="@+id/llTop"
+         android:layout_width="match_parent"
+         android:layout_height="47dip"
+         android:background="#106184"
+         android:orientation="horizontal"
+         android:gravity="center">
+
+    <ImageView
+        android:id="@+id/btnLink"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="5dip"
+        android:background="@drawable/ic_common_back"
+        android:text="返回" 
+        android:onClick="eventBtnBack"/>
+
+   
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:gravity="center" />
+
+    
+    <Button
+        android:id="@+id/btnSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dip"
+        android:text="设置" 
+        android:onClick="eventBtnSet"
+        android:visibility="invisible"/>
+    
+</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:orientation="horizontal">
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dip"
+        android:orientation="horizontal"
+        android:gravity="center">
+    
+         <ImageView
+	        android:id="@+id/btnLink"
+	        android:layout_width="100dip"
+	        android:layout_height="100dip"
+	        android:background="@drawable/plane_ico"/>
+         
+    </LinearLayout>
+    
+    <TableLayout  
+           android:id="@+id/MorePageTableLayout_Favorite"  
+           android:layout_width="fill_parent"  
+           android:layout_height="wrap_content" 
+           android:paddingTop="20dip"
+           android:shrinkColumns="0"  
+           android:stretchColumns="0" >  
+
+           <TableRow  
+               android:id="@+id/more_page_row0"  
+               android:layout_width="fill_parent"  
+               android:layout_marginLeft="2.0dip"  
+               android:layout_marginRight="2.0dip"  
+               android:background="@drawable/voice_rcd_btn_nor"
+               android:paddingBottom="16.0dip"  
+               android:paddingTop="8.0dip" >  
+
+               <TextView  
+                   android:layout_width="wrap_content"  
+                   android:layout_height="fill_parent"  
+                   android:drawablePadding="10.0dip"  
+                   android:gravity="center_vertical"  
+                   android:includeFontPadding="false"  
+                   android:paddingLeft="17.0dip"  
+                   android:text="版本:V1.0"  
+                   android:textColor="#ff333333"  
+                   android:textSize="16.0sp" />  
+
+           </TableRow>  
+           
+          
+      </TableLayout>  
+    
+</LinearLayout>
